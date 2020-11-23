@@ -3,81 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First HTML/CSS</title>
-    <link href = "styles.css" rel="stylesheet">
+    <title>PV Component Library</title>
+    <link href = "/styles.css" rel = "stylesheet" />
 </head>
 <body>
-    <h1>MY H1 HEADING!</h1>
-    <p>Good morning everyone, Im going to do a line break, by the hr tag.</p>
-    <hr>
-    <h1>1. Biggest heading </h1>
-    <h2>2. Smaller heading</h2>
-    <p>This is normal size text.This is free flowing!</p>
-    <small>Even smaller text using the 'small' tag.</small>
-    <hr>
-    <h2>Containers</h2>
-    <h3>Fluid container</h3>
-    <div>This is fluid container. <br> It will go full width of page.</div>
-    <h3>Center Container</h3>
-    <div>It will go to the given width and center content.</div>
-    <hr>
-    <h2>HyperLink</h2>
-    <div>My previously hosted <a href="https://valhalla10.netlify.app/">Website</a></div>
-    <hr>
-    <h2>Talking about lists</h2>
-    <p>There are two types of lists <br> 
-    1. Unordered lists <br> 2. Ordered lists</p>
-    <h3>Unordered list</h3>
-    <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-    </ul>
-    <h3>Ordered lists</h3>
-    <ol>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-    </ol>
-    <div>Got the difference?? :)</div>
+    <h1>Component Library</h1>
+    <p>I am creating this <strong>Component Library</strong>, from scratch. I will sleep after completing the code for this one.<br /> <br />
+    We can create better design by the help of this. <br /> <br />
+    After this I will add CSS file to beautify the page, and later I will create a portfolio using just HTML and CSS.</p>
     <hr>
 
-    <h2>Navigation</h2>
-    <nav>
-        <div>This is going to be the Navigation tab</div>
-        <ul>
-            <li>
-                Home
+    <h2>@typography</h2>
+    <h1>This is the biggest Heading H1</h1>
+    <h2>This is the secong biggest H2</h2>
+    <p>This is normal text writeen by the help of p tag, or the div tag.</p>
+    <small>This is small.</small>
+    <hr />
+
+    <h2>@Containers</h2>
+    <h3>@fluid containers</h3>
+    <div class = "container">We'll keep this full width of the page.</div>
+    <h3>@Center Container</h3>
+    <div class = "container container-center">We'll make this center aligned.</div>
+    <hr />
+
+    <h2>@Links</h2>
+    <div class = "link">
+        <a class = "link link--primary" href="Primary/">Primary Link</a> 
+        <a class = "link link--secondary"href="Secondary/">Secondary Link</a>
+    </div>
+    <hr />
+
+     <h2>@lists</h2>
+     <h3>Unordered Lists</h3>
+     <p>THis list has no numbered items, just bullet points.</p>
+     <ul class = "non-bullet">
+         <li>Item one</li>
+         <li>Item two</li>
+         <li>Item three</li>
+     </ul>
+     <h3>Inline Lists</h3>
+     <p>This originally is an Unorderedlist, which later will be turned to inline list.</p>
+     <ul class = "non-bullet">
+        <li class = "list-inline">Item one</li>
+        <li class = "list-inline">Item two</li>
+        <li class = "list-inline">Item three</li>
+     </ul>
+     <h3>Odered lists</h3>
+     <p>This list is going to have numbered items</p>
+     <ol reversed>
+         <li>item One</li>
+         <li>item Two</li>
+         <li>item Three</li>
+    </ol>
+    <p>We will also reverse it later!!</p>
+    <hr />
+
+    <h2>@Nav bar</h2>
+    <nav class = "navigation container">
+        <div class = "nav-heading">pvDEV</div>
+        <ul class= "non-bullet nav-pills">
+            <li class  = "list-inline">
+                <a class= "link link-active" href="/">Home</a>
             </li>
-            <li>
-                Contents
+            <li class = "list-inline nav-pills">
+                <a class= "link" href="/">Projects</a>
             </li>
-            <li>
-                Contact info
+            <li class = "list-inline nav-pills">
+                <a class= "link" href="/">Blogs</a>
             </li>
         </ul>
     </nav>
-    <hr>
-    <header>Image adding</header>
-    <img src ="images/web-dev.svg" />
-    <hr>
-    <h2>Sections</h2>
+    <hr />
+
+    <h2>@Header</h2>
+    <header class = "hero">
+        <img class="hero-image" src = "images/web-dev.svg" />
+        <h3 class = "hero-caption">This is <span class = "hero-caption-inner">PV PRODUCTIONS!</span></h3>
+    </header>
+    <hr />
+
+    <h2>@Section</h2>
     <section>
-        <h3>White section</h3>
-        <p>This will have white bg.</p>
+        <div class = "section white-section">
+            <h1>White Section</h1>
+            <div class = "container-center">A section is used to define a section of a page. This will remain white in color, as it is now.</div>
+        </div>
     </section>
+
     <section>
-        <h3>Grey section</h3>
-        <p>This will have Grey bg.</p>
+        <div class = "section grey-section">
+            <h1>Off-White Section</h1>
+            <div class = "container-center">A section is used to define a section of a page. This will not remain white in color, rather it will have a greyish color in background.</div>
+        </div>
     </section>
-    <hr>
-    <footer>
-        <div>Footer heading</div>
+    <hr />
+
+    <h2>@Footer</h2>
+    <footer class = "footer">
+        <div class="footer-header">Put some header inside footer</div>
         <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
+            <li class = "list-inline ">
+                <a class="link" href = "/">GitHub</a>
+            </li>
+            <li class = "list-inline">
+                <a class="link" href = "/">LinkedIn</a>
+            </li>
+            <li class = "list-inline">
+                <a class="link" href = "/">Twitter</a>
+            </li>
         </ul>
     </footer>
+    
+    <hr />
+
+
+
+
 </body>
 </html>
